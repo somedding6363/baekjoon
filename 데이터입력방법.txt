@@ -1,0 +1,19 @@
+한 줄에 데이터가 들어올 때
+const file = process.platform === 'linux' ? '/dev/stdin' : 'example.txt';
+const input = require('fs').readFileSync(file).trim().toString();
+
+한 줄에 공백으로 데이터가 들어올 때
+const file = process.platform === 'linux' ? '/dev/stdin' : 'example.txt';
+const input = require('fs').readFileSync(file).toString().trim().split(' ');
+
+여러 줄에 데이터가 들어올 때
+const file = process.platform === 'linux' ? '/dev/stdin' : 'example.txt';
+const input = require("fs")
+  .readFileSync(file)
+  .toString()
+  .trim()
+  .split("\n");
+
+
+제출
+example.txt -> /dev/stdin
