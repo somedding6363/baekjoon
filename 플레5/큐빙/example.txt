@@ -1,0 +1,13 @@
+6
+10
+L+ U+ U- B+ F+ U- U+ L+ L- D+
+10
+B- U- L- L+ L- B+ L- R- U- F+
+11
+D+ F- D+ B+ R- L+ L+ U+ U+ B+ U-
+11
+D- U+ U+ R+ D- U+ B+ U- D+ F+ D-
+11
+D+ L- B- D- B- D+ U- B- L+ D- L-
+11
+B+ L- B+ R- F- U+ B+ U- B+ U+ U+
