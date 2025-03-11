@@ -41,6 +41,7 @@ for (let x = 0; x < N; x++) {
   }
 }
 
+for (let i = 0; i < NM; i++) arr[i][i] = 0;
 for (let k = 0; k < NM; k++) {
   for (let i = 0; i < NM; i++) {
     for (let j = 0; j < NM; j++) {
@@ -50,7 +51,7 @@ for (let k = 0; k < NM; k++) {
 }
 
 let answer = 0;
-for (let i = 1; i < NM; i++) {
+for (let i = 0; i < NM; i++) {
   if (arr[0][i] + arr[i][0] <= D) {
     const [x, y] = [Math.floor(i / M), i % M];
     answer = Math.max(answer, map[x][y]);
