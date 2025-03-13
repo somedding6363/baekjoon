@@ -5,7 +5,6 @@ let [N, ...path] = require("fs")
   .trim()
   .split("\n");
 N = Number(N);
-path.sort((a, b) => a.localeCompare(b));
 
 const tree = {};
 const set = (str) => {
@@ -21,7 +20,7 @@ const set = (str) => {
 };
 const answer = [];
 const print = (r, node) => {
-  for (let i in node) {
+  for (let i of Object.keys(node).sort()) {
     answer.push(" ".repeat(r) + i);
     print(r + 1, node[i]);
   }

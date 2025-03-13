@@ -28,9 +28,6 @@ for (let i = 0; i < input.length; i++) {
         cnt++;
       }
       now = now[word[w][a]];
-      if (Object.keys(now).length === 0) {
-        cnt++;
-      }
     }
     total += cnt;
   }
